@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+    }
+    body {
+      box-sizing: border-box;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      top: 0;
+      left: 0;
+      filter: brightness(40%);
+      z-index: -10000;
+    }
+    .contact {
+      align-items: center;
+      margin-top: -600px;
+    }
+    h1 {
+      color: orangered;
+      text-align: center;
+      font-size: 40px;
+    }
+    p {
+      text-align: justify;
+      padding: 10px;
+      color: azure;
+      font-size: 18px;
+    }
+    p b{
+      color: orangered;
+    }
+    ::placeholder {
+      padding: 10px;
+      border: none;
+      color: black;
+    }
+    form {
+      margin-left: 25%;
+    }
+
+    a {
+      text-align: center;
+      text-decoration: none;
+      padding: 8px;
+      background-color: plum;
+      color: black;
+      border-radius: 8px;
+      transition: 0.5s;
+      position: relative;
+      top: 25px;
+    }
+    a:hover {
+      background-color: turquoise;
+    }
+    
+    .btn-msg {
+      margin-bottom: 25px;
+    }
+    p:last-child {
+      transition: 0.5s;
+    }
+    p:last-child:hover {
+      color: aliceblue;
+      transform: scale(1.1);
+    }
+    .text {
+      padding: 8px;
+      width: 450px;
+      border-color: aliceblue;
+    }
+  </style>
+  <body>
+    <img src="images/snacks/contact back.jpg" />
+    <div class="contact">
+      <h1>Contact</h1>
+      <br />
+      <p>
+        We offer full-service catering for any event, large or small. We
+        understand your needs and we will cater the food to satisfy the biggerst
+        criteria of them all, both look and taste. Do not hesitate to contact
+        us.
+      </p>
+      <p class="contact-para"><b>Lovely professional university , punjab</b></p>
+      <p>
+        You can also contact us by phone 9603814064 or email
+        neelapu.venkatanaidu@gmail.com, or you can send us a message here:
+      </p>
+      <form>
+        <p>
+          <input
+            class="text"
+            type="text"
+            placeholder="Name"
+            required
+            name="Name"
+          />
+        </p>
+        <p>
+          <input
+            class="text"
+            type="number"
+            placeholder="How many people"
+            required
+            name="People"
+          />
+        </p>
+        <p>
+          <input
+            class="text"
+            type="datetime-local"
+            placeholder="Date and time"
+            required
+            name="date"
+            value="2022-11-16T20:00"
+          />
+        </p>
+        <p>
+          <input
+            class="text"
+            type="text"
+            placeholder="Message \ Special requirements"
+            required
+            name="Message"
+          />
+        </p>
+        <a
+          href="https://chat.whatsapp.com/Esv62Q55qys4m0abyb2W3f"
+          class="btn-msg"
+          >Message</a
+        >
+      </form>
+    </div>
+  </body>
+</html>

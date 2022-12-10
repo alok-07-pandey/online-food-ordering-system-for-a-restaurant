@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/d9c78b6614.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      .card {
+        border: 1px solid lightgray;
+        width: 280px;
+        height: 280px;
+        padding: 3px;
+        margin: 10px;
+        border-radius: 5px;
+        transition: 0.5s all;
+      }
+      .card:hover {
+        background-color: #eee;
+        
+      }
+      .card p {
+        font-size: 10px;
+        margin-top: -15px;
+        text-align: justify;
+      }
+      .card h3 {
+        color: red;
+        margin-top: -10px;
+        margin-left: 15px;
+      }
+      .money h3{
+        margin-top: -40px;
+        margin-left: 75%;
+      }
+      .card img {
+        width: 100%;
+        border-radius: 8px;
+        height: 120px;
+        width: 240px;
+      }
+      .btn {
+        background: orangered;
+        padding: 8px;
+        border-radius: 8px;
+        color: #eee;
+        border: none;
+        transition: 0.5s all;
+      }
+      .btn:hover {
+        background-color: gold;
+        border-radius: 8px;
+        cursor: pointer;
+        transform: scale(0.9);
+      }
+      .flexbox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 10px;
+      }
+      .checked {
+        color: rgb(255, 204, 0);
+      }
+      .breakfast h1{
+        text-align: center;
+      }
+      .breakfast h1 span{
+        color: orangered;
+        font-size: 35px;
+      }
+      .free{
+        color: rgb(105, 153, 34);
+        margin-top: 5px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="breakfast">
+      <h1><span>-<u>B</span>rea<span>k F</span>as<span>t</span></u><span>-</span></h1>
+      <h1><span>Menu</span></h1>
+    </div>
+    <div class="flexbox">
+      <div class="card">
+        <img src="img/dosa.jpg" class="card" alt="" />
+        <h3>Dosa </h3>
+        <div class="money">
+         <h3>₹100/-</h3>
+        </div>
+        <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Dicta facere ut provident similique earum maxime recusandae,
+           consequuntur, consequatur minima voluptatum voluptas quod non vel 
+           doloremque, quia saepe temporibus explicabo. Officia!
+        </p>
+        <button class="btn">Order Now</button>
+        
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <div class="free">
+          <i class="fa-solid fa-truck-fast"></i>
+          Free Delivery
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/south indian/masala-dosa.jpg" class="card" alt="" />
+        <h3>Masala-dosa</h3>
+        <div class="money">
+         <h3>₹80/-</h3>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+          quis! Pariatur, architecto aspernatur consequuntur, vero dolores nobis
+          velit veritatis deserunt sunt sit officiis sequi? Odio dolor
+          aspernatur at quod veritatis?
+        </p>
+        <button class="btn">Order Now</button>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <div class="free">
+          <i class="fa-solid fa-truck-fast"></i>
+          Free Delivery
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/south indian/Butter-Masala-Dosa.png" class="card" alt="" />
+        <h3>Butter-Masala-Dosa</h3>
+        <div class="money">
+         <h3>₹70/-</h3>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+          quis! Pariatur, architecto aspernatur consequuntur, vero dolores nobis
+          velit veritatis deserunt sunt sit officiis sequi? Odio dolor
+          aspernatur at quod veritatis?
+        </p>
+        <button class="btn">Order Now</button>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <div class="free">
+          <i class="fa-solid fa-truck-fast"></i>
+          Free Delivery
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/south indian/plain-dosa.jpeg" class="card" alt="" />
+        <h3>plain-dosa</h3>
+        <div class="money">
+         <h3>₹50/-</h3>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+          quis! Pariatur, architecto aspernatur consequuntur, vero dolores nobis
+          velit veritatis deserunt sunt sit officiis sequi? Odio dolor
+          aspernatur at quod veritatis?
+        </p>
+        <button class="btn">Order Now</button>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <div class="free">
+          <i class="fa-solid fa-truck-fast"></i>
+          Free Delivery
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/south indian/idli.jpg" class="card" alt="" />
+        <h3>Idli</h3>
+        <div class="money">
+         <h3>₹50/-</h3>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+          quis! Pariatur, architecto aspernatur consequuntur, vero dolores nobis
+          velit veritatis deserunt sunt sit officiis sequi? Odio dolor
+          aspernatur at quod veritatis?
+        </p>
+        <button class="btn">Order Now</button>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <div class="free">
+          <i class="fa-solid fa-truck-fast"></i>
+          Free Delivery
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/south indian/sambhar-vada.jpg" class="card" alt="" />
+        <h3>sambhar-vada</h3>
+        <div class="money">
+         <h3>₹60/-</h3>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+          quis! Pariatur, architecto aspernatur consequuntur, vero dolores nobis
+          velit veritatis deserunt sunt sit officiis sequi? Odio dolor
+          aspernatur at quod veritatis?
+        </p>
+        <button class="btn">Order Now</button>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <div class="free">
+          <i class="fa-solid fa-truck-fast"></i>
+          Free Delivery
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/south indian/onion-uttapam.jpg" class="card" alt="" />
+        <h3>Onion-uttapam</h3>
+        <div class="money">
+         <h3>₹80/-</h3>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+          quis! Pariatur, architecto aspernatur consequuntur, vero dolores nobis
+          velit veritatis deserunt sunt sit officiis sequi? Odio dolor
+          aspernatur at quod veritatis?
+        </p>
+        <button class="btn">Order Now</button>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <div class="free">
+          <i class="fa-solid fa-truck-fast"></i>
+          Free Delivery
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/south indian/Rava-Uttapam.jpg" class="card" alt="" />
+        <h3>Rava-Uttapam</h3>
+        <div class="money">
+         <h3>₹120/-</h3>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+          quis! Pariatur, architecto aspernatur consequuntur, vero dolores nobis
+          velit veritatis deserunt sunt sit officiis sequi? Odio dolor
+          aspernatur at quod veritatis?
+        </p>
+        <button class="btn">Order Now</button>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <div class="free">
+          <i class="fa-solid fa-truck-fast"></i>
+          Free Delivery
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/south indian/mysore-bonda.jpg" class="card" alt="" />
+        <h3>Mysore-bonda</h3>
+        <div class="money">
+         <h3>₹50/-</h3>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+          quis! Pariatur, architecto aspernatur consequuntur, vero dolores nobis
+          velit veritatis deserunt sunt sit officiis sequi? Odio dolor
+          aspernatur at quod veritatis?
+        </p>
+        <button class="btn">Order Now</button>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <div class="free">
+          <i class="fa-solid fa-truck-fast"></i>
+          Free Delivery
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/mixed-dal-vada.jpg" class="card" alt="" />
+        <h3>mixed-dal-vada</h3>
+        <div class="money">
+         <h3>₹70/-</h3>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+          quis! Pariatur, architecto aspernatur consequuntur, vero dolores nobis
+          velit veritatis deserunt sunt sit officiis sequi? Odio dolor
+          aspernatur at quod veritatis?
+        </p>
+        <button class="btn">Order Now</button>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <div class="free">
+          <i class="fa-solid fa-truck-fast"></i>
+          Free Delivery
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/south indian/Aloo-paratha.jpg" class="card" alt="" />
+        <h3>Aloo-paratha</h3>
+        <div class="money">
+         <h3>₹150/-</h3>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+          quis! Pariatur, architecto aspernatur consequuntur, vero dolores nobis
+          velit veritatis deserunt sunt sit officiis sequi? Odio dolor
+          aspernatur at quod veritatis?
+        </p>
+        <button class="btn">Order Now</button>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <div class="free">
+          <i class="fa-solid fa-truck-fast"></i>
+          Free Delivery
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/south indian/roti.jpg" class="card" alt="" />
+        <h3>Roti</h3>
+        <div class="money">
+         <h3>₹100/-</h3>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
+          quis! Pariatur, architecto aspernatur consequuntur, vero dolores nobis
+          velit veritatis deserunt sunt sit officiis sequi? Odio dolor
+          aspernatur at quod veritatis?
+        </p>
+        <button class="btn">Order Now</button>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <div class="free">
+          <i class="fa-solid fa-truck-fast"></i>
+          Free Delivery
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

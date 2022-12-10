@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/d9c78b6614.js" crossorigin="anonymous"></script>
+  <title>HUNGER BIRD</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+* {box-sizing: border-box;}
+
+.home1{
+  display: flex;
+  justify-content: space-between;
+  
+}
+img{
+  margin: 50px 0 0 50px;
+}
+.text{
+  position: relative;
+  top: 200px;
+  right: 150px;
+}
+h1{
+  font-size: 3rem;
+  color: orangered;
+}
+button{
+  border: 0;
+  background-color: plum;
+  padding: 8px 15px 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.5s;
+  color: #fff;
+}
+button:hover{
+  transform: scale(0.9);
+  
+}
+button a{
+  text-decoration: none;
+  color: white;
+}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+
+.cancelbtn {
+  padding:  8px 15px 8px 15px;
+  background-color: plum;
+}
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+
+.container {
+  padding: 16px;
+}
+
+.modal {
+  display: none;
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media (max-width: 990px) {
+  .text{
+    right: 30px;
+  }
+}
+@media (max-width: 856px){
+  .home1{
+    display: block;
+  }
+  .text{
+    top: 20px;
+    margin-left: 30px;
+    padding-bottom: 70px;
+    
+  }
+} 
+@media (max-width: 520px) {
+  .text{
+    margin-left: 7rem;
+    padding-bottom: 70px;
+  }
+}
+@media (max-width: 300px) {
+ .cancelbtn, .signupbtn{
+     width: 100%;
+  }
+  .text{
+    margin-left: 15rem;
+    padding-bottom: 70px;
+  }
+  
+}
+@media (max-width: 580px){
+  img{
+  width: 450px;
+  margin-left: -10px;
+}
+}
+</style>
+<body>
+  <div class="home">
+
+   <div class="home1">
+    <div class="image">
+      <img src="img/home.png" alt="" height="500px" width="500px">
+    </div>
+    <div class="text">
+      <h1>HUNGER BIRD</h1>
+      <button onclick="document.getElementById('none').style.display='block'" style="width:auto;">Sign Up</button>
+    </div>
+   </div>
+    
+  </div>
+
+<div id="none" class="modal">
+  <span onclick="document.getElementById('none').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="home.html">
+    <div class="container">
+      <h2>Sign Up</h2>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="text"><b>First-name</b></label>
+      <input type="text" placeholder="Enter First-name" name="First-name" required>
+
+      <label for="text"><b>Last-name</b></label>
+      <input type="text" placeholder="Enter Last-name" name="Last-name" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="text"><b>Number</b></label>
+      <input type="text" placeholder="Enter Mobile No: " name="Mobile Number" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Confirmation Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('none').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn"> <a href="home.html"> Sign Up</a></button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+</body>
+
+</html>
